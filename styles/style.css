@@ -110,6 +110,30 @@ body {
     background: #4EC5F7;
 }
 
+/* funny videos style */
+.funny-videos-picture{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    padding: 50px 200px;
+    gap: 30px;
+}
+
+.funny-videos-picture img{
+    width: 100%;
+}
+
+.funny-videos-content{
+    text-align: center;
+}
+
+.funny-videos-content h4{
+    margin-bottom: 0;
+}
+.online-games{
+    color: #0B0223;
+}
+
 /* we are gamer section styles */
 .we-are-gamer {
     display: flex;
