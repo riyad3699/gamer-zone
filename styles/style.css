@@ -151,6 +151,7 @@ body {
 
 .funny-videos {
     background: #FFF;
+    height: 500px;
 }
 
 .funny-videos-picture {
@@ -159,10 +160,6 @@ body {
     justify-content: center;
     padding: 50px 200px;
     gap: 30px;
-}
-
-.funny-videos-picture img {
-    width: 100%;
 }
 
 .funny-videos-content {
@@ -176,12 +173,74 @@ body {
     font-weight: 700;
 }
 
+.hover-icon img{
+    width: 15%;
+}
+.hover-icon{
+    display: none;
+    position: relative;
+    bottom: 55%;
+    color: #F948B2;
+    font-size: 20px;
+    text-align: center;
+    height: 100%;
+}
+.card:hover .hover-icon{
+    display: block;    
+}
+.image1{
+    width: 256px;
+    height: 300px;
+    background-image: url(../images/Rectangle\ 4.png);
+    position: relative;
+    background-size: cover;
+}
+.image2{
+    width: 256px;
+    height: 300px;
+    background-image: url(../images/Rectangle\ 5.png);
+    position: relative;
+    background-size: cover;
+}
+.image3{
+    width: 256px;
+    height: 300px;
+    background-image: url(../images/Rectangle\ 7.png);
+    position: relative;
+    background-size: cover;
+}
+.image4{
+    width: 256px;
+    height: 300px;
+    background-image: url(../images/Rectangle\ 6.png);
+    position: relative;
+    background-size: cover;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    pointer-events: none;
+    opacity: 0;
+}
+
+.card:hover .overlay{
+    opacity: 1;
+}
+
+
+
 /* play instant section style */
 
 .play-instant {
     display: flex;
     margin-top: 50px;
     height: 750px;
+    padding-top: 100px;
 }
 
 .play-instant-content h4 {
