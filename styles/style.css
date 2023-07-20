@@ -74,7 +74,7 @@ body {
     background-size: 100%;
 }
 
-.banner-content div{
+.banner-content div {
     display: flex;
     align-items: center;
 }
@@ -173,10 +173,11 @@ body {
     font-weight: 700;
 }
 
-.hover-icon img{
+.hover-icon img {
     width: 15%;
 }
-.hover-icon{
+
+.hover-icon {
     display: none;
     position: relative;
     bottom: 55%;
@@ -185,31 +186,36 @@ body {
     text-align: center;
     height: 100%;
 }
-.card:hover .hover-icon{
-    display: block;    
+
+.card:hover .hover-icon {
+    display: block;
 }
-.image1{
+
+.image1 {
     width: 256px;
     height: 300px;
     background-image: url(../images/Rectangle\ 4.png);
     position: relative;
     background-size: cover;
 }
-.image2{
+
+.image2 {
     width: 256px;
     height: 300px;
     background-image: url(../images/Rectangle\ 5.png);
     position: relative;
     background-size: cover;
 }
-.image3{
+
+.image3 {
     width: 256px;
     height: 300px;
     background-image: url(../images/Rectangle\ 7.png);
     position: relative;
     background-size: cover;
 }
-.image4{
+
+.image4 {
     width: 256px;
     height: 300px;
     background-image: url(../images/Rectangle\ 6.png);
@@ -223,12 +229,12 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.5);
     pointer-events: none;
     opacity: 0;
 }
 
-.card:hover .overlay{
+.card:hover .overlay {
     opacity: 1;
 }
 
@@ -262,7 +268,7 @@ body {
 
 }
 
-.main-picture{
+.main-picture {
     height: 80%;
     padding-right: 30px;
 }
@@ -278,25 +284,28 @@ body {
     padding: 5px;
 }
 
-.games p{
+.games p {
     font-size: 14px;
 }
+
 .games img {
     width: 25%;
 }
 
 .icon-explanation {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     padding: 100px;
     background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
     justify-content: center;
 }
-.games:hover{
+
+.games:hover {
     border: 2px solid #F948B2;
 }
-.games:hover p{
+
+.games:hover p {
     color: #F948B2;
 }
 
@@ -338,7 +347,7 @@ body {
     justify-content: center;
     gap: 30px;
     padding-bottom: 20px;
-
+    flex-wrap: wrap;
 }
 
 .privacy p {
@@ -356,6 +365,7 @@ body {
     font-size: 18px;
     font-weight: 600;
     padding: 30px;
+    flex-wrap: wrap;
 }
 
 small {
@@ -367,9 +377,10 @@ small {
 
 /* small devices */
 @media screen and (max-width: 576px) {
-    body{
+    body {
         width: 100%;
     }
+
     .navbar {
         flex-direction: column;
         width: 100%;
@@ -384,77 +395,81 @@ small {
         margin-bottom: 30px;
     }
 
-    .banner{
+    .banner {
         flex-direction: column-reverse;
         width: 100%;
         justify-content: center;
         padding: 0;
     }
-    .banner-content{
+
+    .banner-content {
         padding: 0;
         text-align: center;
         justify-content: center;
         padding: 30px 20px;
     }
 
-    .banner-picture img{
+    .banner-picture img {
         width: 100%;
     }
-    .banner-picture{
+
+    .banner-picture {
         width: 100%;
         padding: 0;
     }
 
-    .we-are-gamer{
+    .we-are-gamer {
         flex-direction: column;
         width: 100%;
         padding: 0;
     }
 
-    .we-are-gamer img{
+    .we-are-gamer img {
         width: 100%;
     }
 
-    .we-are-gamer-content{
+    .we-are-gamer-content {
         padding: 0;
         margin: auto;
         width: 100%;
         text-align: center;
     }
 
-    .funny-videos-picture{
+    .funny-videos-picture {
         grid-template-columns: repeat(1, 1fr);
 
     }
-    .funny-videos{
+
+    .funny-videos {
         height: 70%;
         text-align: center;
     }
 
-    .play-instant{
+    .play-instant {
         flex-direction: column;
         height: 100%;
         width: 100%;
     }
 
 
-    .main-picture{
+    .main-picture {
         width: 60%;
         align-items: center;
         padding-top: 50px;
         margin-left: 30px;
     }
 
-    .relative-pictures{
+    .relative-pictures {
         width: 30%;
         bottom: 90px;
         right: 120px;
     }
 
-    .play-instant{
+    .play-instant {
         margin: 0;
     }
-    .play-instant-content{
+
+    .play-instant-content {
         padding: 0;
         text-align: center;
         width: 100%;
@@ -462,45 +477,34 @@ small {
         margin: 0;
     }
 
-    .play-instant-pictures{
+    .play-instant-pictures {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .icon-explanation{
-        grid-template-columns: repeat(3,1fr);
-    }
-
-    .games{
-        transform: scale(0.8);
-        gap: 0;
-    }
-    .games p{
+    .games p {
         font-size: 10px;
     }
 
-    .icon-explanation{
+    .icon-explanation {
         gap: 5px;
         padding: 30px 0;
     }
-    .footer-list, .footer-icon{
+
+    .footer-icon {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-    }
-
-    .privacy{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
     }
 }
 
 /* medium screen */
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    body{
+    body {
         width: 100%;
     }
+
     .navbar {
         flex-direction: column;
         width: 100%;
@@ -511,90 +515,97 @@ small {
         margin-bottom: 30px;
     }
 
-    .banner{
+    .banner {
         flex-direction: column-reverse;
         width: 100%;
         justify-content: center;
         padding: 0;
     }
-    .banner-content{
+
+    .banner-content {
         padding: 0;
         text-align: left;
         justify-content: center;
         padding: 30px 200px;
     }
 
-    .banner-picture img{
+    .banner-picture img {
         width: 100%;
     }
-    .banner-picture{
+
+    .banner-picture {
         width: 100%;
         padding: 0;
     }
 
-    .we-are-gamer{
+    .we-are-gamer {
         flex-direction: column;
         width: 100%;
         padding: 0;
     }
 
-    .we-are-gamer img{
+    .we-are-gamer img {
         width: 100%;
     }
 
-    .we-are-gamer-content{
+    .we-are-gamer-content {
         padding: 0;
         margin: auto;
         width: 100%;
         text-align: center;
     }
 
-    .funny-videos-picture{
+    .funny-videos-picture {
         grid-template-columns: repeat(1, 1fr);
 
     }
-    .funny-videos{
+
+    .funny-videos {
         height: 70%;
         text-align: center;
     }
 
-    .image1{
-        margin-left: 55px;
-    }
-    .image2{
-        margin-left: 55px;
-    }
-    .image3{
-        margin-left: 55px;
-    }
-    .image4{
+    .image1 {
         margin-left: 55px;
     }
 
-    .play-instant{
+    .image2 {
+        margin-left: 55px;
+    }
+
+    .image3 {
+        margin-left: 55px;
+    }
+
+    .image4 {
+        margin-left: 55px;
+    }
+
+    .play-instant {
         flex-direction: column;
         height: 100%;
         width: 100%;
     }
 
 
-    .main-picture{
+    .main-picture {
         width: 60%;
         align-items: center;
         padding-top: 50px;
         margin-left: 30px;
     }
 
-    .relative-pictures{
+    .relative-pictures {
         width: 30%;
         bottom: 90px;
         margin-right: 100px;
     }
 
-    .play-instant{
+    .play-instant {
         margin: 0;
     }
-    .play-instant-content{
+
+    .play-instant-content {
         padding: 0;
         text-align: center;
         width: 100%;
@@ -602,35 +613,18 @@ small {
         margin: 0;
     }
 
-    .play-instant-pictures{
+    .play-instant-pictures {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .icon-explanation{
-        grid-template-columns: repeat(3,1fr);
-    }
-
-    .games{
-        transform: scale(0.8);
-        gap: 0;
-    }
-    .games p{
+    .games p {
         font-size: 10px;
     }
 
-    .icon-explanation{
+    .icon-explanation {
         gap: 5px;
         padding: 30px 0;
-    }
-    .footer-list, .footer-icon{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-    }
-
-    .privacy{
-        display: grid;
-        grid-template-columns: repeat(2,1fr);
     }
 }
